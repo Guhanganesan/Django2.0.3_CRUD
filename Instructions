@@ -1,0 +1,18 @@
+You need to Install Django2.0.3 refer Django2.0.3 repository for installations
+open command propmt
+mkdir Django
+cd Django
+django-admin startproject djangocrud
+cd djangocrud
+django-admin startapp myapp
+open your djangocrud project in your visual stdudio code editor
+use CTRL+~ for open terminal and run below command to run the project
+python3 manage.py runserver
+close the terminal to migrate the database configuration and run the below commands
+python3 manage.py makemigrations
+python3 manage.py migrate
+now run the project using below command
+python3 manage.py runserver
+check in your browser: 127.0.0.1:8000/show 
+or localhost:8000/show
+......................
