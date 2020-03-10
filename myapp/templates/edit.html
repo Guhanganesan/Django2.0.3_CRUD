@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit</title>    
+</head>
+<body>
+
+    <form method="GET"  action="/update/{{employee.id}}">
+        {% csrf_token %}
+        
+        Employee Id:
+        <div>
+
+            <input type="text" name="eid" id="id_eid" required maxlength="20" value="
+            {{ employee.eid }}"/>
+        </div>
+        
+        Employee Name:
+        <div>
+            <input type="text" name="ename" id="id_ename" required maxlength="100" value="
+            {{ employee.ename }}" />
+        </div>
+
+        Employee Email:
+        <div>
+            <input type="email" name="eemail" id="id_eemail" required maxlength="254" value="
+            {{ employee.eemail }}" />
+        </div>
+
+
+        Employee Contact:
+        <div>
+            <input type="text" name="econtact" id="id_econtact" required maxlength="15" value="
+            {{ employee.econtact }}" />
+        </div>
+            <button type="submit" class="btn btn-success">Update</button>
+    </form>
+    
+</body>
+</html>

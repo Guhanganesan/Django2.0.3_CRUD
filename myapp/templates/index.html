@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Index</title>   
+</head>
+<body>
+    <form method="GET" action="/emp">
+        {% csrf_token %}
+        Employee Id:
+        <div>
+                {{ form.eid }}
+        </div>
+        Employee Name:
+        <div>
+                {{ form.ename }}
+        </div>
+        Employee Email:
+        
+        <div>
+                {{ form.eemail }}
+        </div>
+        
+        Employee Contact:
+        
+        <div>
+                {{ form.econtact }} 
+        </div>
+            
+            
+        <button type="submit">Submit</button>
+           
+    </form>
+
+</body>
+</html>
+
